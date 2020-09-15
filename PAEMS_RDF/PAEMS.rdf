@@ -1,0 +1,1125 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://amilab.kr/ontologies/paems/"
+     xml:base="http://amilab.kr/ontologies/paems/"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ssn="http://www.w3.org/ns/ssn/"
+     xmlns:www="http://www.schema.org/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sosa="http://www.w3.org/ns/sosa/"
+     xmlns:sweet="http://sweetontology.net/matrAerosol/"
+     xmlns:schema="http://schema.org/"
+     xmlns:qudt-1-1="http://qudt.org/1.1/schema/qudt#"
+     xmlns:ssn-system="http://www.w3.org/ns/ssn/systems/"
+     xmlns:qudt-unit-1-1="http://qudt.org/1.1/vocab/qudt#"
+     xmlns:ssn-extension="http://www.w3.org/ns/ssn/ext/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sooh/ontologies/2020/6/untitled-ontology-26"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://qudt.org/1.1/schema/qudt#numericValue -->
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/1.1/schema/qudt#numericValue"/>
+    
+
+
+    <!-- http://qudt.org/1.1/schema/qudt#unit -->
+
+    <owl:ObjectProperty rdf:about="http://qudt.org/1.1/schema/qudt#unit"/>
+    
+
+
+    <!-- http://schema.org/maxValue -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/maxValue"/>
+    
+
+
+    <!-- http://schema.org/minValue -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/minValue"/>
+    
+
+
+    <!-- http://schema.org/uniCode -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/uniCode"/>
+    
+
+
+    <!-- http://schema.org/value -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/value"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#lat -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#long -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hasFeatureOfInterest -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasMember"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/hasResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/hasResult"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/isFeatureOfInterestOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/isObservedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/isObservedBy"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/madeBySensor -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeBySensor"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/madeObservation -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/madeObservation"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/observes -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/observes"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/resultTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/sosa/resultTime"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/hasProperty"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/hasSubsystem -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/hasSubsystem"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/hasOperatingProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/systems/hasOperatingProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/hasOperatingRange -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/systems/hasOperatingRange">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/hasSystemCapability -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/systems/hasSystemCapability">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/hasSystemProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/ssn/systems/hasSystemProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/ns/ssn/hasProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://qudt.org/1.1/vocab/qudt#Second -->
+
+    <owl:DatatypeProperty rdf:about="http://qudt.org/1.1/vocab/qudt#Second"/>
+    
+
+
+    <!-- http://qudt.org/1.1/vocab/qudt#Volt -->
+
+    <owl:DatatypeProperty rdf:about="http://qudt.org/1.1/vocab/qudt#Volt"/>
+    
+
+
+    <!-- http://qudt.org/1.1/vocab/qudt#ppm -->
+
+    <owl:DatatypeProperty rdf:about="http://qudt.org/1.1/vocab/qudt#ppm"/>
+    
+
+
+    <!-- http://qudt.org/1.1/vocab/qudt#μm -->
+
+    <owl:DatatypeProperty rdf:about="http://qudt.org/1.1/vocab/qudt#μm"/>
+    
+
+
+    <!-- http://schema.org/value -->
+
+    <owl:DatatypeProperty rdf:about="http://schema.org/value"/>
+    
+
+
+    <!-- http://sweetontology.net/matrAerosol/PM1 -->
+
+    <owl:DatatypeProperty rdf:about="http://sweetontology.net/matrAerosol/PM1"/>
+    
+
+
+    <!-- http://sweetontology.net/matrAerosol/PM10 -->
+
+    <owl:DatatypeProperty rdf:about="http://sweetontology.net/matrAerosol/PM10"/>
+    
+
+
+    <!-- http://sweetontology.net/matrAerosol/PM2point5 -->
+
+    <owl:DatatypeProperty rdf:about="http://sweetontology.net/matrAerosol/PM2point5"/>
+    
+
+
+    <!-- http://www.schema.org/Time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.schema.org/Time"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://qudt.org/1.1/schema/qudt#QuantityValue -->
+
+    <owl:Class rdf:about="http://qudt.org/1.1/schema/qudt#QuantityValue">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/1.1/schema/qudt#numericValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://qudt.org/1.1/schema/qudt#unit"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#lat"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#long"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
+
+    <owl:Class rdf:about="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Actuator -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Actuator">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/FeatureOfInterest -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/FeatureOfInterest">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isFeatureOfInterestOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/ext/ObservationCollection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/ObservableProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/ObservableProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/isObservedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Observation -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Observation">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasResult"/>
+                <owl:someValuesFrom rdf:resource="http://qudt.org/1.1/schema/qudt#QuantityValue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/resultTime"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/sosa/Sensor -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/System"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/madeObservation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/ext/ObservationCollection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/observes"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/Property -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/Property"/>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/System -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/System">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/hasSubsystem"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/System"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/systems/hasOperatingRange"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/systems/hasSystemCapability"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/systems/SystemCapability"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/ext/ObservationCollection -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/ext/ObservationCollection">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasFeatureOfInterest"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/hasMember"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/sosa/madeBySensor"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/MeasurementRange -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/MeasurementRange">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/OperatingPowerRange -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/OperatingPowerRange">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/OperatingProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/OperatingProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/OperatingRange -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/OperatingRange">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/systems/hasOperatingProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingProperty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/ResponseTime -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/ResponseTime">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/systems/SystemProperty"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/SystemCapability -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SystemCapability">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/systems/hasSystemProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/systems/MeasurementRange"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/ssn/systems/hasSystemProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/ssn/systems/ResponseTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/ssn/systems/SystemProperty -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/ssn/systems/SystemProperty">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/ssn/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Air-Quality -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Air-Quality">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Arduino-OPR-V_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Arduino-OPR-V_01">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</schema:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Arduino_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Arduino_01">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Arduino_01_OPR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Arduino_01_OPR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingPowerRange"/>
+        <schema:uniCode rdf:resource="http://amilab.kr/ontologies/paems/unit-Volt"/>
+        <schema:value rdf:resource="http://amilab.kr/ontologies/paems/Arduino-OPR-V_01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Arduino_01_OR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Arduino_01_OR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Carbon-Monoxide -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Carbon-Monoxide">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor-RT-minV_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor-RT-minV_01">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</schema:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_01_MR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_01_MR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/MeasurementRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_01_OC_20200624_001 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_01_OC_20200624_001">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/ext/ObservationCollection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_01_OPR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_01_OPR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingPowerRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_01_OR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_01_OR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_01_RT -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_01_RT">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/ResponseTime"/>
+        <schema:minValue rdf:resource="http://amilab.kr/ontologies/paems/LAQ-Sensor-RT-minV_01"/>
+        <schema:uniCode rdf:resource="http://amilab.kr/ontologies/paems/unit-Second"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_01_SC -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_01_SC">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/SystemCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_02_MR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_02_MR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/MeasurementRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_02_OC_20200624_001 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_02_OC_20200624_001">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/ext/ObservationCollection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_02_OPR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_02_OPR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingPowerRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_02_OR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_02_OR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_02_RT -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_02_RT">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/ResponseTime"/>
+        <schema:minValue rdf:resource="http://amilab.kr/ontologies/paems/LAQ-Sensor-RT-minV_01"/>
+        <schema:uniCode rdf:resource="http://amilab.kr/ontologies/paems/unit-Second"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LAQ-Sensor_02_SC -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LAQ-Sensor_02_SC">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/SystemCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Laser-PM25-Air-Quality-Sensor_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Laser-PM25-Air-Quality-Sensor_01">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Laser-PM25-Air-Quality-Sensor_02 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Laser-PM25-Air-Quality-Sensor_02">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Latitude -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Latitude">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LoRa-OPR-maxV_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LoRa-OPR-maxV_01">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.6</schema:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LoRa-OPR-minV_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LoRa-OPR-minV_01">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.2</schema:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LoRa_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LoRa_01">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LoRa_01_OPR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LoRa_01_OPR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingPowerRange"/>
+        <schema:maxValue rdf:resource="http://amilab.kr/ontologies/paems/LoRa-OPR-maxV_01"/>
+        <schema:minValue rdf:resource="http://amilab.kr/ontologies/paems/LoRa-OPR-minV_01"/>
+        <schema:uniCode rdf:resource="http://amilab.kr/ontologies/paems/unit-Volt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/LoRa_01_OR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/LoRa_01_OR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Location -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Location">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Longitude -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Longitude">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ131-Sensor-MR-maxV_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ131-Sensor-MR-maxV_01">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</schema:value>
+        <schema:value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</schema:value>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ131-Sensor-MR-minV_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ131-Sensor-MR-minV_01">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ131-Sensor_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ131-Sensor_01">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ131-Sensor_01_MR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ131-Sensor_01_MR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/MeasurementRange"/>
+        <schema:maxValue rdf:resource="http://amilab.kr/ontologies/paems/MQ131-Sensor-MR-maxV_01"/>
+        <schema:minValue rdf:resource="http://amilab.kr/ontologies/paems/MQ131-Sensor-MR-minV_01"/>
+        <schema:uniCode rdf:resource="http://amilab.kr/ontologies/paems/unit-ppm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ131-Sensor_01_OC_20200624_001 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ131-Sensor_01_OC_20200624_001">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/ext/ObservationCollection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ131-Sensor_01_OPR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ131-Sensor_01_OPR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingPowerRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ131-Sensor_01_OR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ131-Sensor_01_OR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ131-Sensor_01_SC -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ131-Sensor_01_SC">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/SystemCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ7-Sensor_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ7-Sensor_01">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ7-Sensor_01_MR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ7-Sensor_01_MR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/MeasurementRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ7-Sensor_01_OC_20200624_001 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ7-Sensor_01_OC_20200624_001">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/ext/ObservationCollection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ7-Sensor_01_OPR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ7-Sensor_01_OPR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingPowerRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ7-Sensor_01_OR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ7-Sensor_01_OR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/MQ7-Sensor_01_SC -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/MQ7-Sensor_01_SC">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/SystemCapability"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/NEO-6M-Sensor_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/NEO-6M-Sensor_01">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Sensor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/NEO-6M-Sensor_01_OC_20200624_001 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/NEO-6M-Sensor_01_OC_20200624_001">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/ext/ObservationCollection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/NEO-6M-Sensor_01_OPR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/NEO-6M-Sensor_01_OPR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingPowerRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/NEO-6M-Sensor_01_OR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/NEO-6M-Sensor_01_OR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/O0001-NV_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/O0001-NV_01">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <sweet:PM10 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">12.38</sweet:PM10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/O0001-NV_02 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/O0001-NV_02">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <sweet:PM2point5 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.56</sweet:PM2point5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/O0001-NV_03 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/O0001-NV_03">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <sweet:PM1 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.94</sweet:PM1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/O0001-QV_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/O0001-QV_01">
+        <rdf:type rdf:resource="http://qudt.org/1.1/schema/qudt#QuantityValue"/>
+        <qudt-1-1:numericValue rdf:resource="http://amilab.kr/ontologies/paems/O0001-NV_01"/>
+        <qudt-1-1:numericValue rdf:resource="http://amilab.kr/ontologies/paems/O0001-NV_02"/>
+        <qudt-1-1:numericValue rdf:resource="http://amilab.kr/ontologies/paems/O0001-NV_03"/>
+        <qudt-1-1:unit rdf:resource="http://amilab.kr/ontologies/paems/unit-μm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/O0001-RT_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/O0001-RT_01">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <www:Time rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-24T12:39:00Z</www:Time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/O0002-NV_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/O0002-NV_01">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <sweet:PM10 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.57</sweet:PM10>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/O0002-NV_02 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/O0002-NV_02">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <sweet:PM2point5 rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.84</sweet:PM2point5>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/O0002-NV_03 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/O0002-NV_03">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/O0002-QV_02 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/O0002-QV_02">
+        <rdf:type rdf:resource="http://qudt.org/1.1/schema/qudt#QuantityValue"/>
+        <qudt-1-1:numericValue rdf:resource="http://amilab.kr/ontologies/paems/O0002-NV_01"/>
+        <qudt-1-1:numericValue rdf:resource="http://amilab.kr/ontologies/paems/O0002-NV_02"/>
+        <qudt-1-1:numericValue rdf:resource="http://amilab.kr/ontologies/paems/O0002-NV_03"/>
+        <qudt-1-1:unit rdf:resource="http://amilab.kr/ontologies/paems/unit-μm"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/O0002-RT_02 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/O0002-RT_02">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <www:Time rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-06-24T13:40:00Z</www:Time>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Observation_0001 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Observation_0001">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <sosa:resultTime rdf:resource="http://amilab.kr/ontologies/paems/O0001-RT_01"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Observation_0002 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Observation_0002">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
+        <sosa:resultTime rdf:resource="http://amilab.kr/ontologies/paems/O0002-RT_02"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Ozone -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Ozone">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Particular-Matter-1.0 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Particular-Matter-1.0">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Particular-Matter-10 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Particular-Matter-10">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Particular-Matter-2.5 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Particular-Matter-2.5">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/ObservableProperty"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Portable-Atmospheric-Environment-Measurement-System_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Portable-Atmospheric-Environment-Measurement-System_01">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Raspberry-Pi-Touch-Display_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Raspberry-Pi-Touch-Display_01">
+        <rdf:type rdf:resource="http://www.w3.org/ns/sosa/Actuator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Raspberry-Pi_01 -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Raspberry-Pi_01">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/System"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Raspberry-Pi_01_OPR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Raspberry-Pi_01_OPR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingPowerRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/Raspberry-Pi_01_OR -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/Raspberry-Pi_01_OR">
+        <rdf:type rdf:resource="http://www.w3.org/ns/ssn/systems/OperatingRange"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/unit-Second -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/unit-Second">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <qudt-unit-1-1:Second>Second</qudt-unit-1-1:Second>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/unit-Volt -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/unit-Volt">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <qudt-unit-1-1:Volt>Volt</qudt-unit-1-1:Volt>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/unit-ppm -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/unit-ppm">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <qudt-unit-1-1:ppm>ppm</qudt-unit-1-1:ppm>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://amilab.kr/ontologies/paems/unit-μm -->
+
+    <owl:NamedIndividual rdf:about="http://amilab.kr/ontologies/paems/unit-μm">
+        <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <qudt-unit-1-1:μm>μm</qudt-unit-1-1:μm>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
